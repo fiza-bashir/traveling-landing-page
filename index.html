@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>traveling-landing-page</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <!-- navbar start  -->
+    <nav class="navbar navbar-expand-lg bg-transparent text-dark mt-4">
+        <div class="container">
+            <!-- logo start  -->
+            <a href="#"><i class="fa-brands fa-telegram text-white"></i></a>
+          <a class="navbar-brand text-white fw-bold" href="#">Travelog</a>
+          <!-- logo end  -->
+           <!-- toggler button start -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- toggler button end  -->
+           <!-- item start  -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto ">
+              <li class="nav-item">
+                <a class="nav-link active text-white fw-bold" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white fw-bold" aria-current="page" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white fw-bold" aria-current="page" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white fw-bold" aria-current="page" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white fw-bold" aria-current="page" href="#">Blog</a>
+              </li>
+              <!-- item end  -->
+              <!-- Search option start -->
+             <form class="d-flex align-items-center ms-5 me-3 ps-5">
+            <div class="input-group" style="width: 250px;"> <!-- Adjust width -->
+           <input type="search" class="form-control" placeholder="">
+           <span class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></span>
+         </div>
+
+           <!-- User icon with margin -->
+        <a href="#" class="fs-2 text-white ms-4"><i class="fa-solid fa-circle-user"></i></a>
+        </form>
+            <!-- search form end  -->
+          </div>
+        </div>
+      </nav>
+      <!-- navbar end  -->
+<!-- heading and paragraph start  -->
+<div class=" d-flex flex-column align-items-start text-container mt-4 ms-5">
+    <h2 class="display-2 text-white fw-bold text-wrap d-inline-block w-50 mt-2">
+        it’s a big world <br> out there, go <br> explore.
+    </h2>
+    <p class="text-white text-wrap d-inline-block w-50">
+        discover new attractions and experiences to match your <br> interests and travel style.
+    </p>
+    <button class="btn btn-primary mt-3 text-black bg-white border-0 ">Book Now</button>
+</div>
+<!-- heading and paragragh end  -->
+
+ <!-- Swiper Section Start -->
+ <section class="mb-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8 offset-md-4">
+        <h2 class="text-center mb-4 text-white">Discount Offer</h2>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <img src="./img/boat-8002718_640.jpg" alt="Image 1" class="w-100">
+            </div>
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <img src="./img/cloud-7890229_640.jpg" alt="Image 2" class="w-100">
+            </div>
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+              <img src="./img/mountain-7970232_640.jpg" alt="Image 3" class="w-100">
+            </div>
+            <!-- Slide 4 -->
+            <div class="swiper-slide">
+              <img src="./img/cloud-7890229_640.jpg" alt="Image 4" class="w-100">
+            </div>
+            <!-- Slide 5 -->
+            <div class="swiper-slide">
+              <img src="./img/boat-8002718_640.jpg" alt="Image 5" class="w-100">
+            </div>
+          </div>
+
+          <!-- Pagination Dots (Optional) -->
+          <!-- <div class="swiper-pagination"></div> -->
+
+          <!-- Navigation Buttons (Optional) -->
+          <!-- <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Swiper Section End -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/all.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1, // Default 1 slide small screens pe
+        spaceBetween: 20, // Slide gap
+        loop: true,
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          576: {
+            slidesPerView: 1, // Small screen (576px) = 1 Slide
+          },
+          768: {
+            slidesPerView: 2, // Medium screen (768px) = 2 Slides
+          },
+          992: {
+            slidesPerView: 3, // Large screen (992px and above) = 3 Slides
+          }
+        }
+      });
+    </script>
+    
+</body>
+</html>
